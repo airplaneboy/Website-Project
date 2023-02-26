@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './app.css';
+import { Navbar } from './components';
+import { IconContext } from 'react-icons/lib';
+import Theme from './theme';
 
-function App() {
+import { ThemeProvider } from '@mui/material';
+
+import { Footer, Header, Main } from './containers';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={Theme}>
+        <IconContext.Provider value={{ size: '2em', verticalAlign: 'middle' }}>
+          <div className='App'>
+            <Navbar></Navbar>
+            <Header></Header>
+            <Main></Main>
+            <Footer></Footer>
+          </div>
+        </IconContext.Provider>
+      </ThemeProvider>
+    </>
   );
-}
+};
 
 export default App;

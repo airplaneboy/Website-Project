@@ -1,0 +1,10 @@
+1. Sliding sidebar from the right to give more information about each courses (Drawer)
+
+Pages
+1. Landing page
+2. Home page
+3. Courses page
+4. Topic page
+5. Learning page
+6. Settings page
+7.
