@@ -12,9 +12,10 @@ const Courses = () => {
           variant='text'
           color='primary'
           sx={{
-            fontWeight: '500',
+            fontWeight: '700',
             textTransform: 'none',
             fontSize: 'default',
+            fontFamily: 'var(--font-family)',
           }}>
           Courses<MdArrowDropDown></MdArrowDropDown>
         </Button>

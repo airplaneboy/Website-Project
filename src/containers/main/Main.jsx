@@ -7,7 +7,12 @@ const Main = () => {
   return (
     <Stack
       direction='row'
-      sx={{ maxWidth: 1200, ml: 'auto', mr: 'auto', alignItems: 'baseline' }}>
+      sx={{
+        pt: 8,
+        maxWidth: 1200,
+        ml: 'auto',
+        mr: 'auto',
+      }}>
       <SideBar></SideBar>
       <PageContainer></PageContainer>
     </Stack>

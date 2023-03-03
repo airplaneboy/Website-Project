@@ -4,12 +4,9 @@ import { SidebarItemsList } from '../data';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import { Box } from '@mui/system';
 
 const SidebarItems = () => {
-  const [disableElevation, setDisableElevation] = useState(true);
-
   return (
     <>
       {SidebarItemsList.map((objects) => {
@@ -20,11 +17,11 @@ const SidebarItems = () => {
               variant='h4'
               sx={{
                 fontWeight: '700',
-                fontFamily: 'var(--font-secondary)',
+                fontFamily: 'var(--font-family)',
                 fontSize: '14px',
                 textTransform: 'uppercase',
                 textAlign: 'center',
-                color: 'text.secondary',
+                color: 'var(--color-grey)',
                 mb: 3,
                 mt: 4,
               }}>
@@ -37,9 +34,8 @@ const SidebarItems = () => {
                 return (
                   <Button
                     color='transparent'
-                    disableElevation={disableElevation}
+                    disableElevation={true}
                     disableRipple
-                    onHoverStart={!setDisableElevation}
                     whileHover={{
                       scale: 1.1,
                     }}
@@ -48,14 +44,12 @@ const SidebarItems = () => {
                     }}
                     component={motion.div}
                     sx={{
-                      // border: '1px solid var(--color-border)',
-                      // borderRightColor: '',
                       backgroundColor: 'var(--color-bg)',
                       width: 'auto',
                       height: '45px',
-                      fontSize: 'default',
+                      fontSize: '16px',
                       fontFamily: 'var(--font-family)',
-                      fontWeight: '300',
+                      fontWeight: '500',
                       color: 'var(--color-primary)',
                       justifyContent: 'flex-start',
                       mb: 1,
@@ -87,7 +81,14 @@ const SidebarItems = () => {
                         alt=''
                         width='22.5'
                         height='22.5'></img>
-                      {name}
+                      <Typography
+                        sx={{
+                          fontSize: 16,
+                          fontWeight: 500,
+                          width: 'max-content',
+                        }}>
+                        {name}
+                      </Typography>
                     </Box>
                   </Button>
                 );

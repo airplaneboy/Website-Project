@@ -9,6 +9,9 @@
 body {
   background-color: var(--color-bg);
   font-family: var(--font-family);
+  background-image: url(assets/grid.svg);
+  background-repeat: repeat;
+  background-position: center top;
 }
 
 a {

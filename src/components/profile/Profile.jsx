@@ -9,7 +9,12 @@ const Profile = () => {
   return (
     <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
       <Button variant='text'>
-        <Typography sx={{ fontSize: 'default', fontWeight: 500 }}>
+        <Typography
+          sx={{
+            fontSize: 'default',
+            fontWeight: 700,
+            fontFamily: 'var(--font-family)',
+          }}>
           Hi, {username}
         </Typography>
       </Button>

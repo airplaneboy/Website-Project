@@ -36,6 +36,11 @@ const Topics = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 sx={{
+                  height: '15em',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'flex-end',
+                  alignItems: 'center',
                   borderRadius: 3,
                   border: '1px solid var(--color-border)',
                   '&:hover': {
@@ -56,14 +61,14 @@ const Topics = () => {
                         sx={{
                           px: 1,
                           display: 'flex',
-                          flexDirection: 'column',
+                          flexDirection: 'row',
                           justifyContent: 'space-between',
                           alignItems: 'baseline',
                         }}>
                         {/* Topic */}
                         <Typography
                           sx={{
-                            textAlign: 'center',
+                            textAlign: 'start',
                             textOverflow: 'ellipsis',
                             overflow: 'hidden',
                             fontSize: 14,
@@ -75,15 +80,15 @@ const Topics = () => {
                         </Typography>
 
                         {/* Percentage */}
-                        {/* <Typography
+                        <Typography
                           sx={{
                             fontSize: 10,
                             width: '100%',
-                            // textAlign: 'end',
+                            textAlign: 'end',
                             color: 'secondary.main',
                           }}>
                           {percentageCompleted + '% Completed'}
-                        </Typography> */}
+                        </Typography>
                       </Box>
 
                       {/* Progressbar */}
