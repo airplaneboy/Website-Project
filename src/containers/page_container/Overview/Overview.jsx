@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import OverviewData from './OverviewData';
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
+import Tooltip from '@mui/material/Tooltip';
 
 const Overview = () => {
   return (
@@ -43,20 +44,22 @@ const Overview = () => {
                     alignItems: 'center',
                   }}>
                   <i style={{ color: `${color}` }}>{icons}</i>
-                  <Typography
-                    sx={{
-                      textAlign: 'start',
-                      overflow: 'hidden',
-                      whiteSpace: 'nowrap',
-                      textOverflow: 'ellipsis',
-                      width: 'max-content',
-                      fontSize: 16,
-                      fontWeight: 700,
-                      ml: 1,
-                      color: 'var(--color-grey)',
-                    }}>
-                    {itemTitle}
-                  </Typography>
+                  <Tooltip title={itemTitle}>
+                    <Typography
+                      sx={{
+                        textAlign: 'start',
+                        overflow: 'hidden',
+                        whiteSpace: 'nowrap',
+                        textOverflow: 'ellipsis',
+                        width: 'max-content',
+                        fontSize: 16,
+                        fontWeight: 700,
+                        ml: 1,
+                        color: 'var(--color-grey)',
+                      }}>
+                      {itemTitle}
+                    </Typography>
+                  </Tooltip>
                 </Box>
                 {/* Value */}
                 <Box>
