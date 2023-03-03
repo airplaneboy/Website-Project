@@ -6,6 +6,7 @@ import CourseItem from './CourseItem';
 import CourseProgress from './CourseProgress';
 import SubjectData from '../SubjectData';
 import Button from '@mui/material/Button';
+import { motion } from 'framer-motion';
 
 const MyCourses = () => {
   return (
@@ -49,7 +50,10 @@ const MyCourses = () => {
                 const { name, percentageCompleted, completed, total } = items;
 
                 return (
-                  <Box>
+                  <Box
+                    component={motion.div}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}>
                     <Grid2
                       container
                       spacing={2}
