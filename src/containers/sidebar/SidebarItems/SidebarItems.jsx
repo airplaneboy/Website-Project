@@ -44,7 +44,7 @@ const SidebarItems = () => {
                     }}
                     component={motion.div}
                     sx={{
-                      backgroundColor: 'var(--color-bg)',
+                      // backgroundColor: 'var(--color-bg)',
                       width: 'auto',
                       height: '45px',
                       fontSize: '16px',
@@ -54,18 +54,20 @@ const SidebarItems = () => {
                       justifyContent: 'flex-start',
                       mb: 1,
                       borderRadius: '4px 0 0px 4px',
-                      transitionDuration: '0.3s',
+                      transitionDuration: '0s',
                       '&:focus': {
                         border: '2px solid var(--color-secondary)',
                         borderRight: 'none',
                         color: 'var(--color-secondary)',
                         fontWeight: '700',
+                        backgroundColor: 'var(--color-bg)',
                       },
                       '&:hover': {
                         fontWeight: '700',
                         borderRadius: '4px',
                         border: '2px solid',
                         borderRight: '2px solid',
+                        backgroundColor: 'var(--color-bg)',
                       },
                     }}
                     variant='contained'>

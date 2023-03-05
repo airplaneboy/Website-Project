@@ -8,7 +8,6 @@ const SideBar = () => {
       sx={{
         minWidth: 250,
         // ml: 8,
-        borderRight: '50px solid var(--color-border)',
       }}>
       <nav
         style={{

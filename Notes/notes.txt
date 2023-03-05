@@ -1,10 +1,13 @@
 1. Sliding sidebar from the right to give more information about each courses (Drawer)
 
-Pages
-1. Landing page
-2. Home page
-3. Courses page
-4. Topic page
-5. Learning page
-6. Settings page
-7.
+Pages:
+1. Homepage
+2. About Us
+3. Courses
+4. FAQ
+5. Testimonials
+6. Contact Us
+7. Profile
+8. Dashboard
+9. Subject
+10. Topics

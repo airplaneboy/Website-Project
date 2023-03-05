@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/random-logo.svg';
+import logo from '../../assets/Icons/random-logo.svg';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';

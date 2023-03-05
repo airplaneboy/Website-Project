@@ -5,8 +5,8 @@ import { IconContext } from 'react-icons/lib';
 import Theme from './theme';
 
 import { ThemeProvider } from '@mui/material';
-
-import { Footer, Header, Main } from './containers';
+import { Footer, Header } from './containers';
+import Main from './pages/main/Main';
 
 const App = () => {
   return (
