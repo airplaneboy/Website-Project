@@ -16,10 +16,12 @@ export const SidebarItemsList = [
       {
         name: 'National Courses',
         icon: Book,
+        link: '/main/national-courses',
       },
       {
         name: 'International Courses',
         icon: Mortarboard,
+        link: '/main/international-courses',
       },
     ],
   },
@@ -30,18 +32,22 @@ export const SidebarItemsList = [
       {
         name: 'Dashboard',
         icon: Pressure,
+        link: '/main/main',
       },
       {
         name: 'Notification',
         icon: Bell,
+        link: '/main/notifications',
       },
       {
         name: 'Profile',
         icon: User,
+        link: '/main/profile',
       },
       {
         name: 'Settings',
         icon: Setting,
+        link: '/main/settings',
       },
     ],
   },
@@ -51,10 +57,12 @@ export const SidebarItemsList = [
       {
         name: 'Exam Information',
         icon: Edit,
+        link: '/main/test-information',
       },
       {
         name: 'Results',
         icon: Order,
+        link: '/main/results',
       },
     ],
   },

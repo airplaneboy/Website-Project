@@ -1,7 +1,7 @@
 import React from 'react';
 
-const subject = () => {
+const Subject = () => {
   return <div>subject</div>;
 };
 
-export default subject;
+export default Subject;
