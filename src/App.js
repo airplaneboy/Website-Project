@@ -1,5 +1,5 @@
 import React from 'react';
-import './app.css';
+import './App.css';
 import { Navbar } from './components';
 import { IconContext } from 'react-icons/lib';
 import Theme from './theme';
