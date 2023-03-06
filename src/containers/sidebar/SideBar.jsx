@@ -18,6 +18,7 @@ const SideBar = () => {
           borderRadius: '16px 0 0 16px',
           backgroundColor: 'var(--color-bg)',
           borderRight: '1px solid var(--color-border)',
+          background: 'linear-gradient(45deg, #1e1e1e, #14141499)',
         }}>
         <SidebarItems></SidebarItems>
       </nav>

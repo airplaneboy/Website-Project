@@ -2,7 +2,6 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import { SidebarItemsList } from '../data';
 import Typography from '@mui/material/Typography';
-import Stack from '@mui/material/Stack';
 import { motion } from 'framer-motion';
 import { Box } from '@mui/system';
 import { NavLink } from 'react-router-dom';

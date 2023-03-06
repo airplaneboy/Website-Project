@@ -4,36 +4,39 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Logo = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0.8 }}
-      transition={{ type: 'tween', duration: 0.25 }}
-      whileHover={{ opacity: 1, scale: 1.025 }}
-      whileTap={{ scale: 0.975 }}>
-      <Box>
-        <Button
-          sx={{
-            textTransform: 'none',
-            color: 'text.primary',
-            '&:hover': { backgroundColor: 'transparent' },
-          }}
-          variant='text'
-          disableRipple>
-          <img src={logo} alt='logo' />
-          <Typography
-            variant='h5'
+    <Link to='/'>
+      <motion.div
+        initial={{ opacity: 0.8 }}
+        transition={{ type: 'tween', duration: 0.25 }}
+        whileHover={{ opacity: 1, scale: 1.025 }}
+        whileTap={{ scale: 0.975 }}>
+        <Box>
+          <Button
             sx={{
-              ml: 1,
-              typography: 'logo',
-              textTransform: 'capitalize',
-            }}>
-            CompanyName
-          </Typography>
-        </Button>
-      </Box>
-    </motion.div>
+              textTransform: 'none',
+              color: 'text.primary',
+              '&:hover': { backgroundColor: 'transparent' },
+            }}
+            variant='text'
+            disableRipple>
+            <img src={logo} alt='logo' />
+            <Typography
+              variant='h5'
+              sx={{
+                ml: 1,
+                typography: 'logo',
+                textTransform: 'capitalize',
+              }}>
+              CompanyName
+            </Typography>
+          </Button>
+        </Box>
+      </motion.div>
+    </Link>
   );
 };
 
