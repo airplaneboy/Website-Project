@@ -1,7 +1,7 @@
 1. Sliding sidebar from the right to give more information about each courses (Drawer)
 
 Pages:
-1. Homepage
+1. Homepage [x]
 2. About Us
 3. Courses
 4. FAQ
@@ -11,3 +11,5 @@ Pages:
 8. Dashboard
 9. Subject
 10. Topics
+11. Login
+12. Register

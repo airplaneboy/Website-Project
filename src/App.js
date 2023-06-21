@@ -7,19 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
 import Theme from './theme';
-import {
-  Main,
-  Home,
-  Contact,
-  Testimonials,
-  About,
-  Courses,
-  FAQ,
-  Subject,
-  Topics,
-  Profile,
-  Error,
-} from './pages';
+import { Main, Home, Contact, Testimonials, About, Courses, FAQ, Subject, Topics, Profile, Error } from './pages';
 
 const App = () => {
   return (
@@ -31,7 +19,7 @@ const App = () => {
             <Header></Header>
             {/* <Main></Main> */}
             <Routes>
-              <Route path='/' element={<Home />}></Route>
+              <Route path='/' element={<Main />}></Route>
               <Route path='/about' element={<About />}></Route>
               <Route path='/contact' element={<Contact />}></Route>
               <Route path='/courses' element={<Courses />}></Route>
